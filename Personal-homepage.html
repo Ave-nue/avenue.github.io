@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<script src = "http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular-animate.min.js"></script>
+	<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<title>Avenue</title>
+	<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<link rel="stylesheet" href="material.min.css">
+	<script src="material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<style type="text/css">
+		@import"Personal-homepage.css";
+	</style>
+	<style>
+	</style>
+</head>
+<body ng-app="myHomepage" ng-controller="myCtrl">
+<div class="mdl-layout mdl-js-layout">
+	<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<header class=" mdl-header mdl-layout__header mdl-layout__header--scroll">
+		<!-- header -->
+		<div class="mdl-layout__header-row">
+			<!-- spacer -->
+			<div class="mdl-layout-spacer"></div>
+			<!-- navigation -->
+			<nav>
+				<button href="#" class="mdl-button mdl-js-button mdl-button--icon material-icons mdl-js-ripple-effect">share</button>
+			</nav>
+		</div>
+		<div class="mdl-layout__header-row">
+			<!-- spacer -->
+			<div class="mdl-layout-spacer"></div>
+		</div>
+		<div class="mdl-layout__header-row">
+			<!-- title -->
+			<span class="mdl-typography--display-3">Avenue</span>
+			<!-- spacer -->
+			<div class="mdl-layout-spacer"></div>
+		</div>
+		<div class="mdl-layout__header-row">
+			<!-- second-title -->
+			<span class="mdl-typography--subhead">Ave林荫's Personal homepage</span>
+			<!-- spacer -->
+			<div class="mdl-layout-spacer"></div>
+		</div>
+		<div class="mdl-layout__header-row">
+			<!-- spacer -->
+			<div class="mdl-layout-spacer"></div>
+		</div>
+		<!-- tabs -->
+		<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+			<a href="#panel-1" class="mdl-layout__tab is-active  mdl-typography--subhead">主页</a>
+			<a href="#panel-2" class="mdl-layout__tab  mdl-typography--subhead">页面2</a>
+			<a href="#panel-3" class="mdl-layout__tab  mdl-typography--subhead">页面3</a>
+		</div>
+	</header>
+	<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<div class="mdl-layout__drawer mdl-color-text--white">
+		<div class="drawer-title default-primary-color">
+			<span class="mdl-typography--display-3">Menu</span>
+		</div>
+		<nav class="mdl-navigation ">
+			<a href="#" class="mdl-navigation__link text-primary-color">link1</a>
+		</nav>
+	</div>
+	<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<main class="mdl-layout__content">
+	<div class="mdl-grid">
+		<!-- tab-panel -->
+		<div class="mdl-cell mdl-cell--7-col main-card">
+			<div class="main-card mdl-shadow--2dp light-primary-color">
+				<div class="mdl-card__title">主页</div>
+				<div class="mdl-layout__tab-panel is-active" id="panel-1" >主页</div>
+				<div class="mdl-layout__tab-panel" id="panel-2">页面2</div>
+				<div class="mdl-layout__tab-panel" id="panel-3">页面3</div>
+			</div>
+		</div>
+		<div class="mdl-cell mdl-cell--3-col mdl-cell--hide-phone">
+			<div class="mdl-card mdl-shadow--2dp light-primary-color right-card">
+				<div class="mdl-card__title">
+					<h2 class="mdl-card__title-text">Current&nbsp;Time</h2>
+				</div>
+				<div class="mdl-card__supprting-text text-center">
+				      <input ng-model="hour" class="time-box" readOnly>
+				      :&nbsp;<input ng-model="minute" class="time-box" readOnly>
+				      :&nbsp;<input ng-model="second" class="time-box" readOnly>
+				</div>
+				<div class="mdl-card__title">
+					<h2 class="mdl-card__title-text">Attachment</h2>
+				</div>
+				<div class="mdl-card__supprting-text">
+				      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				      Mauris sagittis pellentesque lacus eleifend lacinia...
+				</div>
+				<div class="mdl-card__title">
+					<h2 class="mdl-card__title-text">Attachment</h2>
+				</div>
+				<div class="mdl-card__supprting-text">
+				      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				      Mauris sagittis pellentesque lacus eleifend lacinia...
+				</div>
+				<div class="mdl-card__menu">
+					<button class="mdl-button mdl-js-button mdl-button--icon material-icons mdl-js-ripple-effect">
+						clear
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- footer -->
+	<footer class="mdl-mega-footer default-primary-color text-center"><span class="mdl-typography--title">-&nbsp;</span><span class="material-icons ">font_download</span><span class="mdl-typography--title">ve&nbsp;-</span></footer>
+	<footer class="mdl-mega-footer dark-primary-color">
+		<div class="mdl-mega-footer--middle-section">
+			<div class="mdl-mega-footer--drop-down-section" ></div>
+			<!-- <div class="mdl-mega-footer--drop-down-section">
+				<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+				<h5 class=" mdl-mega-footer--heading">友情链接</h5>
+				<ul class="mdl-mega-footer--link-list">
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+				</ul>
+			</div>-->
+			<div class="mdl-mega-footer--drop-down-section" style="float:right">
+				<h5 class=" mdl-mega-footer--heading">我的QQ</h5>
+				<img src="F:/Sublime Text 64bit/QQcode.png" class="code">
+			</div>
+			<div class="mdl-mega-footer--drop-down-section" style="float:right">
+				<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+				<h5 class=" mdl-mega-footer--heading">服务与支持</h5>
+				<ul class="mdl-mega-footer--link-list">
+					<li><a href="#"><span class="material-icons ">send</span>&nbsp;&nbsp;联系林荫</a></li>
+					<li><a href="#"><span class="material-icons ">plus_one</span>&nbsp;&nbsp;关注微博</a></li>
+					<li><a href="#"><span class="material-icons ">group</span>&nbsp;&nbsp;学习交流</a></li>
+					<li><a href="#"><span class="material-icons ">report</span>&nbsp;&nbsp;关于我们</a></li>
+					<li><a href="#"><span class="material-icons ">cloud_download</span>&nbsp;&nbsp;网页下载</a></li>
+					<li><a href="#"><span class="material-icons ">mood</span>&nbsp;&nbsp;为我点赞</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mdl-mega-footer--bottom-section text-center">
+			<hr class="divider-color"/>
+			<footer class="mdl-typography--body-1">&copy;&nbsp;你爸比的个人主页</footer>
+		</div>
+	</footer>
+	</main>
+</div>
+<script src="Personal-homepage.js"></script>
+</body>
+</html>
